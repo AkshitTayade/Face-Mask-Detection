@@ -13,13 +13,15 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     frame = cv2.flip(frame, 1)
 
+    frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
     # detect face from live webcam feed
-    faces = face.detectMultiScale(frame, 1.3, 5)
+    faces = face.detectMultiScale(frame_gray, 1.3, 5)
 
     for (x,y,w,h) in faces:
 
         # region of interest
-        face_roi = frame[y:y+h+20, x:x+w]
+        face_roi = frame_gray[y:y+h+20, x:x+w]
 
         # drawing rectangle around the face
         cv2.rectangle(frame, (x,y), (x+w, y+h+20), (0,0,255), 2)
