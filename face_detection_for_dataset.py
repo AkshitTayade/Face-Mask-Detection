@@ -20,14 +20,15 @@ else:
     os.mkdir('dataset')
     os.mkdir('dataset/Mask')
     os.mkdir('dataset/Not mask')
+    os.mkdir('dataset/Test')
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # first enter the user's name
 filename = input("Enter your name: ")
 print()
-print("Which Label you want to save in? \n 1. Mask \n 2. Not Mask")
-choice = input("Enter 1 or 2: ")
+print("Which Label you want to save in? \n 1. Mask \n 2. Not Mask \n 3. Test Images")
+choice = input("Enter 1 or 2 or 3: ")
 print()
 print("")
 
@@ -35,8 +36,10 @@ print("")
 # we want to save the face accordingly
 if choice == "1":
     saving_dir = "dataset/Mask"
-else:
+elif choice == "2":
     saving_dir = "dataset/Not Mask"
+else:
+    saving_dir = "dataset/Test"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -48,15 +51,15 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     frame = cv2.flip(frame, 1)
 
-    frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    #frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # detect face from live webcam feed
-    faces = face.detectMultiScale(frame_gray, 1.3, 5)
+    faces = face.detectMultiScale(frame, 1.3, 5)
 
     for (x,y,w,h) in faces:
 
         # region of interest
-        face_roi = frame_gray[y:y+h+15, x:x+w]
+        face_roi = frame[y:y+h+15, x:x+w]
 
         if cv2.waitKey(1) & 0xFF == ord('s'):
 
