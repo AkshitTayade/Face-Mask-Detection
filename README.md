@@ -29,7 +29,7 @@ b) Without Mask
 
 7. We Train the CCN model <br>
 <p align='center'>
-    <img alt="IMG" src="https://github.com/AkshitTayade/Face-Mask-Detection/blob/main/Screenshot%202021-03-26%20at%201.08.16%20PM.png?raw=true" width="500" height="350" />
+    <img alt="IMG" src="https://github.com/AkshitTayade/Face-Mask-Detection/blob/main/static/Screenshot%202021-03-26%20at%201.08.16%20PM.png?raw=true" width="500" height="350" />
 </p>
 
 8. We have tested our model with test images and got correct output for the same.
