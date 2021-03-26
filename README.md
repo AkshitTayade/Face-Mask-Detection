@@ -45,13 +45,15 @@ You can directly run the application on your desktop using this [file](https://g
 If you wish to run this application on browser using Flask, run [this](https://github.com/AkshitTayade/Face-Mask-Detection/blob/main/app.py)
 >Run this in your terminal: ***python3 app.py***
 
-<hr>
-* Dataset can be found here: 
+<hr></hr>
+
+>Dataset can be found here: 
 
 ## Technologies used
 * Tensorflow, Keras
 * OpenCV
 * Flask
 
-<hr>
-<p>Created by: [Akshit Tayade](https://github.com/AkshitTayade) and [Aayush Maru](https://github.com/aayushmaru18)</p>
+<hr></hr>
+
+Created by: [Akshit Tayade](https://github.com/AkshitTayade) and [Aayush Maru](https://github.com/aayushmaru18)
