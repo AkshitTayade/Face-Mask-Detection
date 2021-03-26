@@ -9,7 +9,7 @@ wearing of mask, use of hand gloves, face shield, and use of sanitizer is very i
 Many Organizations are making it compulsory to follow social distancing and wearing of face mask.</p>
 
 <p align='center'>
-    <img alt="IMG" src="https://github.com/AkshitTayade/Face-Mask-Detection/blob/main/static/demo.gif?raw=true" width="500" height="350" />
+    <img alt="IMG" src="https://github.com/AkshitTayade/Face-Mask-Detection/blob/main/static/demo.gif?raw=true"/>
 </p>
 
 ## Project Outliners
