@@ -54,4 +54,4 @@ If you wish to run this application on browser using Flask, run [this](https://g
 * Flask
 
 <hr>
-<p>Created by: Akshit Tayade & Aayush Maru<p>
+<p>Created by: @Akshit Tayade & @Aayush Maru<p>
